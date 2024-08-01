@@ -50,7 +50,7 @@ pipeline = IngestionPipeline(transformations=[
 pipeline.disable_cache = True
 nodes = pipeline.run(documents=documents, num_workers=4)
 
-print(len(nodes))
+# print(len(nodes))
 
 index = VectorStoreIndex(nodes)
 
